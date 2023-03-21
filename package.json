@@ -1,0 +1,67 @@
+{
+  "name": "react-dumper",
+  "version": "1.0.0",
+  "description": "My first react typescript package",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gapon2401/my-react-typescript-package.git"
+  },
+  "scripts": {
+    "watch": "concurrently 'yarn build:esm' 'yarn build:cjs'",
+    "watch:d": "concurrently \"nodemon --watch src --exec 'yarn build:esm'\" \"nodemon --watch src --exec 'yarn build:cjs'\"",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc --watch",
+    "build:cjs": "tsc --watch --module commonjs --outDir dist/cjs",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "awesome-project"
+  ],
+  "author": {
+    "name": "Boyko Pavel",
+    "url": "https://t.me/fullstalker"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.1",
+    "@types/react": "^18.0.12",
+    "@types/react-custom-scroll": "^4.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.1",
+    "jest-canvas-mock": "^2.4.0",
+    "jest-environment-jsdom": "^28.1.1",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "ts-jest": "^28.0.4",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "json-formatter-js": "^2.3.4",
+    "react-custom-scroll": "^5.0.0"
+  }
+}
