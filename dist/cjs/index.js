@@ -1,7 +1,9 @@
 "use strict";
-exports.__esModule = true;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Dumper = void 0;
-var tslib_1 = require("tslib");
-var Dumper_1 = tslib_1.__importDefault(require("./components/Dumper/Dumper"));
-exports.Dumper = Dumper_1["default"];
+var DumperView_1 = require("./components/Dumper/DumperView");
+Object.defineProperty(exports, "Dumper", { enumerable: true, get: function () { return __importDefault(DumperView_1).default; } });
 //# sourceMappingURL=index.js.map

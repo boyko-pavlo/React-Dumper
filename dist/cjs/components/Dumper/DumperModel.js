@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.DumperModel = void 0;
 var react_1 = require("react");
 var useLocalStorage_1 = require("./useLocalStorage");
@@ -23,7 +23,7 @@ var DumperModel = function () {
             componentX: componentX,
             height: height,
             mouseY: mouseY,
-            componentY: componentY
+            componentY: componentY,
         }));
     }, [setOpt, dragging, resizing, width, mouseX, componentX, height, mouseY, componentY]);
     var handleMouseDown = function (e) {
@@ -70,7 +70,7 @@ var DumperModel = function () {
         componentX: componentX,
         componentY: componentY,
         width: width,
-        height: height
+        height: height,
     };
 };
 exports.DumperModel = DumperModel;

@@ -1,5 +1,6 @@
 {
-  "include": ["src"],
+  "compileOnSave": true,
+  "include": ["src", "tests/*.ts"],
   "exclude": [
     "dist",
     "node_modules"
@@ -22,6 +23,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": []
+    "typeRoots": ["node_modules/@types"],
+    "types": [ "node", "jest" ]
   }
 }
