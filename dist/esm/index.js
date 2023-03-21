@@ -1,3 +1,2 @@
-import Dumper from './components/Dumper/Dumper';
-export { Dumper };
+export { default as Dumper } from './components/Dumper/DumperView';
 //# sourceMappingURL=index.js.map

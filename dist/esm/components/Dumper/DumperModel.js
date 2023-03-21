@@ -20,7 +20,7 @@ export var DumperModel = function () {
             componentX: componentX,
             height: height,
             mouseY: mouseY,
-            componentY: componentY
+            componentY: componentY,
         }));
     }, [setOpt, dragging, resizing, width, mouseX, componentX, height, mouseY, componentY]);
     var handleMouseDown = function (e) {
@@ -67,7 +67,7 @@ export var DumperModel = function () {
         componentX: componentX,
         componentY: componentY,
         width: width,
-        height: height
+        height: height,
     };
 };
 //# sourceMappingURL=DumperModel.js.map

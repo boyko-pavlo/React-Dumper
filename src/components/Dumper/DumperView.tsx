@@ -9,7 +9,7 @@ interface IDumperProps {
   config?: JSONFormatterConfiguration
 }
 
-const Dumper: FC<IDumperProps> = ({
+const DumperView: FC<IDumperProps> = ({
   data,
   config = {
     hoverPreviewEnabled: true,
@@ -59,4 +59,4 @@ const Dumper: FC<IDumperProps> = ({
   )
 }
 
-export default Dumper
+export default DumperView

@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import JSONFormatter from 'json-formatter-js';
 import CustomScroll from 'react-custom-scroll';
 import { DumperStyles } from './DumperStyles';
-var Dumper = function (_a) {
+var DumperView = function (_a) {
     var data = _a.data, _b = _a.config, config = _b === void 0 ? {
         hoverPreviewEnabled: true,
         hoverPreviewArrayCount: 100,
@@ -37,5 +37,5 @@ var Dumper = function (_a) {
         React.createElement("div", { className: 'resize-handle', style: __assign(__assign(__assign({}, manipulator), resizer), resizerVertical), onMouseDown: handleMouseDown }),
         React.createElement("div", { className: 'resize-handle', style: __assign(__assign(__assign({}, manipulator), resizer), resizerHorizontal), onMouseDown: handleMouseDown })));
 };
-export default Dumper;
-//# sourceMappingURL=Dumper.js.map
+export default DumperView;
+//# sourceMappingURL=DumperView.js.map
