@@ -1,7 +1,7 @@
 {
   "name": "react-dumper",
   "version": "1.0.0",
-  "description": "My first react typescript package",
+  "description": "react dumper",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
